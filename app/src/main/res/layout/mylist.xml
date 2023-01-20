@@ -8,30 +8,61 @@
         android:background="@drawable/img1"
         android:layout_height="60dp"
         android:id="@+id/list_item"
-        ></ImageView>
+        >
+    </ImageView>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txv1"
+                android:text="title here"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txv2"
+                android:textSize="15dp"
+                android:text="subtitle here">
+
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp">
 
+            <TextView
+                android:id="@+id/mrpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRP"
+                android:textSize="20dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txv1"
-            android:text="title"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            ></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txv2"
-            android:textSize="12dp"
-            android:text="subtitle">
+            </TextView>
 
-        </TextView>
+            <TextView
+                android:id="@+id/brandText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="brand"></TextView>
         </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
